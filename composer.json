@@ -1,0 +1,46 @@
+{
+    "name": "mr687/laraveltripay",
+    "description": "A Wrapper Payment Tripay for Laravel",
+    "keywords": [
+        "mr687",
+        "laraveltripay"
+    ],
+    "homepage": "https://github.com/mr687/laraveltripay",
+    "license": "MIT",
+    "type": "library",
+    "authors": [{
+        "name": "Daphinokio",
+        "email": "daphinokioo@gmail.com",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": "^7.1 || ^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mr687\\Laraveltripay\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mr687\\Laraveltripay\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mr687\\Laraveltripay\\LaraveltripayServiceProvider"
+            ],
+            "aliases": {
+                "Tripay": "Mr687\\Laraveltripay\\LaraveltripayFacade"
+            }
+        }
+    }
+}
