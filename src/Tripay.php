@@ -30,6 +30,16 @@ class Tripay
         return self::ENDPOINT_SANBOX . $route;
     }
 
+    public function transactionDetail($reference)
+    {
+        if (!$reference) return null;
+        $route = 'transaction/detail';
+        $response = self::req('get', $route, [
+            'reference' => $reference
+        ]);
+        return $response->json();
+    }
+
     public function transaction($data)
     {
         $route = 'transaction/create';
