@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Http;
 
 class Tripay
 {
-    protected const ENDPOINT_SANBOX = 'https://payment.tripay.co.id/api-sandbox/';
-    protected const ENDPOINT = 'https://payment.tripay.co.id/api';
+    protected const ENDPOINT_SANBOX = 'https://tripay.co.id/api-sandbox/';
+    protected const ENDPOINT = 'https://tripay.co.id/api/';
 
     public function req($method = 'get', $route = null, $params = null)
     {
