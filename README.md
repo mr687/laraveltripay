@@ -1,4 +1,4 @@
-# Very short description of the package
+# Laravel Tripay
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mr687/laraveltripay.svg?style=flat-square)](https://packagist.org/packages/mr687/laraveltripay)
 [![Total Downloads](https://img.shields.io/packagist/dt/mr687/laraveltripay.svg?style=flat-square)](https://packagist.org/packages/mr687/laraveltripay)
